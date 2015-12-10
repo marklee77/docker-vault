@@ -21,6 +21,6 @@ ENV VAULT_ADDR=http://127.0.0.1:8200
 EXPOSE 8200
 
 RUN mkdir /var/lib/vault
-VOLUMES ["/var/lib/vault"]
+VOLUME ["/var/lib/vault"]
 
 CMD ./startvault.sh
